@@ -19,6 +19,7 @@ namespace OOP
 			Console.WriteLine ("sampleObject property = {0} & sampleObject2 property = {1}", sampleObject.SampleProperty, sampleObject2.SampleProperty);
 			Console.WriteLine (StaticClass.StaticString);
 
+			//anonymous objects
 			var anonymousObject = new {FirstProperty = "A"};
 			Console.WriteLine (anonymousObject.FirstProperty);
 
