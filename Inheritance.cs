@@ -4,12 +4,18 @@ namespace OOP
 {
 	class BaseClass
 	{
-		public BaseClass()
+		public BaseClass(String a)
 		{
+            _a = a;
 		}
-	}
 
-	class DerivedClass:BaseClass{}
+        public string _a { get; set; }
+    }
+
+	class DerivedClass:BaseClass
+    {
+        BaseClass a = new BaseClass("");
+    }
 
 	//This class cannot be used as a base class
 	public sealed class A{}
